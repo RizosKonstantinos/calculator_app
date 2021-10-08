@@ -150,11 +150,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton3.setText("CE");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
         mainPanel.add(jButton3);
 
         jButton4.setBackground(new java.awt.Color(240, 240, 240));
