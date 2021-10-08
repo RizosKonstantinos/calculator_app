@@ -62,6 +62,9 @@ public class MainWindow extends javax.swing.JFrame {
         jButton21 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setMinimumSize(new java.awt.Dimension(335, 510));
+        setPreferredSize(new java.awt.Dimension(335, 510));
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
 
@@ -104,17 +107,17 @@ public class MainWindow extends javax.swing.JFrame {
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
-        outputPanel.setBackground(new java.awt.Color(230, 230, 230));
+        outputPanel.setBackground(new java.awt.Color(255, 102, 102));
 
         javax.swing.GroupLayout outputPanelLayout = new javax.swing.GroupLayout(outputPanel);
         outputPanel.setLayout(outputPanelLayout);
         outputPanelLayout.setHorizontalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 348, Short.MAX_VALUE)
         );
         outputPanelLayout.setVerticalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
+            .addGap(0, 83, Short.MAX_VALUE)
         );
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 0));
@@ -132,6 +135,7 @@ public class MainWindow extends javax.swing.JFrame {
         );
 
         mainPanel.setBackground(new java.awt.Color(230, 230, 230));
+        mainPanel.setMinimumSize(new java.awt.Dimension(0, 0));
         mainPanel.setLayout(new java.awt.GridLayout(6, 4, 2, 2));
 
         jButton1.setBackground(new java.awt.Color(240, 240, 240));
