@@ -70,7 +70,10 @@ public class MainWindow extends javax.swing.JFrame {
         TopPanel.setPreferredSize(new java.awt.Dimension(360, 36));
 
         String mode = new String("\u2630").toUpperCase();
+        modelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         modelLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
+        modelLabel.setToolTipText("Open Navigation");
+        modelLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         modelLabel.setBounds(2, 6, 61, 37);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 20)); // NOI18N
