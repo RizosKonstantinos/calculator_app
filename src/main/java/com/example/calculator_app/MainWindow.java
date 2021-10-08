@@ -139,14 +139,15 @@ public class MainWindow extends javax.swing.JFrame {
         mainPanel.setLayout(new java.awt.GridLayout(6, 4, 2, 2));
 
         jButton1.setBackground(new java.awt.Color(240, 240, 240));
-        jButton1.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jButton1.setText("%");
+        jButton1.setFont(new java.awt.Font("Segoe UI Semilight", 0, 16)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-percentage-20.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         mainPanel.add(jButton1);
 
         jButton3.setBackground(new java.awt.Color(240, 240, 240));
         jButton3.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(65, 65, 64));
         jButton3.setText("CE");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
@@ -154,6 +155,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(240, 240, 240));
         jButton4.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(65, 65, 64));
         jButton4.setText("C");
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
@@ -161,31 +163,31 @@ public class MainWindow extends javax.swing.JFrame {
 
         jButton5.setBackground(new java.awt.Color(240, 240, 240));
         jButton5.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jButton5.setText("jButton1");
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-backspace-20.png"))); // NOI18N
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         mainPanel.add(jButton5);
 
         jButton6.setBackground(new java.awt.Color(240, 240, 240));
-        jButton6.setText("jButton1");
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/oie_58tr4EM4IOKH.png"))); // NOI18N
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         mainPanel.add(jButton6);
 
         jButton7.setBackground(new java.awt.Color(240, 240, 240));
-        jButton7.setText("jButton1");
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x-square.png"))); // NOI18N
         jButton7.setBorder(null);
         jButton7.setBorderPainted(false);
         mainPanel.add(jButton7);
 
         jButton8.setBackground(new java.awt.Color(240, 240, 240));
-        jButton8.setText("jButton1");
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/square-root-2.png"))); // NOI18N
         jButton8.setBorder(null);
         jButton8.setBorderPainted(false);
         mainPanel.add(jButton8);
 
         jButton17.setBackground(new java.awt.Color(240, 240, 240));
-        jButton17.setText("/");
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-divide-20-less.png"))); // NOI18N
         jButton17.setBorder(null);
         jButton17.setBorderPainted(false);
         mainPanel.add(jButton17);
@@ -215,7 +217,7 @@ public class MainWindow extends javax.swing.JFrame {
         mainPanel.add(jButton32);
 
         jButton13.setBackground(new java.awt.Color(240, 240, 240));
-        jButton13.setText("*");
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-multiply-20b.png"))); // NOI18N
         jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         mainPanel.add(jButton13);
@@ -245,7 +247,7 @@ public class MainWindow extends javax.swing.JFrame {
         mainPanel.add(jButton28);
 
         jButton9.setBackground(new java.awt.Color(240, 240, 240));
-        jButton9.setText("-");
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-subtract-20-black.png"))); // NOI18N
         jButton9.setBorder(null);
         jButton9.setBorderPainted(false);
         mainPanel.add(jButton9);
@@ -276,14 +278,14 @@ public class MainWindow extends javax.swing.JFrame {
 
         jButton25.setBackground(new java.awt.Color(240, 240, 240));
         jButton25.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
-        jButton25.setText("+");
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-plus-math-20.png"))); // NOI18N
         jButton25.setBorder(null);
         jButton25.setBorderPainted(false);
         mainPanel.add(jButton25);
 
         jButton22.setBackground(new java.awt.Color(249, 249, 249));
         jButton22.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton22.setText("jButton1");
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-plus-slash-minus-20.png"))); // NOI18N
         jButton22.setBorder(null);
         jButton22.setBorderPainted(false);
         mainPanel.add(jButton22);
@@ -304,7 +306,7 @@ public class MainWindow extends javax.swing.JFrame {
         mainPanel.add(jButton24);
 
         jButton21.setBackground(new java.awt.Color(236, 177, 142));
-        jButton21.setText("jButton1");
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-equal-sign-20.png"))); // NOI18N
         jButton21.setBorder(null);
         jButton21.setBorderPainted(false);
         mainPanel.add(jButton21);
