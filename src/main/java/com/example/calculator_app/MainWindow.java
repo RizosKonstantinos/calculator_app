@@ -5,6 +5,8 @@
  */
 package com.example.calculator_app;
 
+import java.awt.ComponentOrientation;
+
 /**
  *
  * @author konri
@@ -18,6 +20,7 @@ public class MainWindow extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Calculator");
         this.setLocationRelativeTo(null);
+        jTextPane2.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);   
     }
 
     /**
@@ -28,12 +31,18 @@ public class MainWindow extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         jPanel1 = new javax.swing.JPanel();
         TopPanel = new javax.swing.JPanel();
         modelLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         outputPanel = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
         jPanel2 = new javax.swing.JPanel();
         clearMemoryButton = new javax.swing.JButton();
         recallMemoryButton = new javax.swing.JButton();
@@ -102,7 +111,7 @@ public class MainWindow extends javax.swing.JFrame {
                 .addComponent(modelLabel)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(212, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         TopPanelLayout.setVerticalGroup(
             TopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,15 +125,76 @@ public class MainWindow extends javax.swing.JFrame {
 
         outputPanel.setBackground(new java.awt.Color(255, 102, 102));
 
+        jPanel3.setLayout(new java.awt.GridBagLayout());
+
+        jButton11.setBackground(new java.awt.Color(230, 230, 230));
+        jButton11.setBorder(null);
+        jButton11.setFocusPainted(false);
+        jButton11.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        jButton11.setMaximumSize(new java.awt.Dimension(18, 17));
+        jButton11.setMinimumSize(new java.awt.Dimension(18, 17));
+        jButton11.setPreferredSize(new java.awt.Dimension(18, 17));
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton11MouseExited(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel3.add(jButton11, gridBagConstraints);
+
+        jButton12.setBackground(new java.awt.Color(230, 230, 230));
+        jButton12.setBorder(null);
+        jButton12.setFocusPainted(false);
+        jButton12.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        jButton12.setMaximumSize(new java.awt.Dimension(18, 17));
+        jButton12.setMinimumSize(new java.awt.Dimension(18, 17));
+        jButton12.setPreferredSize(new java.awt.Dimension(18, 17));
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton12MouseExited(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        jPanel3.add(jButton12, gridBagConstraints);
+
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextPane2.setBackground(new java.awt.Color(230, 230, 230));
+        jTextPane2.setBorder(null);
+        jTextPane2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextPane2.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        jScrollPane2.setViewportView(jTextPane2);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.weightx = 1.0;
+        jPanel3.add(jScrollPane2, gridBagConstraints);
+
         javax.swing.GroupLayout outputPanelLayout = new javax.swing.GroupLayout(outputPanel);
         outputPanel.setLayout(outputPanelLayout);
         outputPanelLayout.setHorizontalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
         );
         outputPanelLayout.setVerticalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 88, Short.MAX_VALUE)
+            .addGroup(outputPanelLayout.createSequentialGroup()
+                .addGap(3, 3, 3)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(230, 230, 230));
@@ -936,6 +1006,74 @@ public class MainWindow extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_clearMemoryButtonMouseClicked
 
+    private void jButton11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseEntered
+        if (jTextPane2.getText().equals("")) {
+            leftScrollButtonDisable();
+        } else {
+            leftScrollButtonEnableFocused();
+        }
+    }//GEN-LAST:event_jButton11MouseEntered
+
+    private void jButton11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseExited
+        if (jTextPane2.getText().equals("")) {
+            leftScrollButtonDisable();
+        } else {
+            leftScrollButtonEnableUnfocused();
+        }
+    }//GEN-LAST:event_jButton11MouseExited
+
+    private void jButton12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseEntered
+        if (jTextPane2.getText().equals("")) {
+            rightScrollButtonDisable();
+        } else {
+            rightScrollButtonEnableFocused();
+        }
+    }//GEN-LAST:event_jButton12MouseEntered
+
+    private void jButton12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseExited
+        if (jTextPane2.getText().equals("")) {
+            rightScrollButtonDisable();
+        } else {
+            rightScrollButtonEnableUnfocused();
+        }
+    }//GEN-LAST:event_jButton12MouseExited
+
+    private void leftScrollButtonEnableUnfocused() {
+        jButton11.setEnabled(true);
+        jButton11.setBackground(new java.awt.Color(209,209,209));
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-less-than-15-orange.png")));
+    }
+
+    private void leftScrollButtonEnableFocused() {
+        jButton11.setEnabled(true);
+        jButton11.setBackground(new java.awt.Color(209,209,209));
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-less-than-15-black.png")));
+    }
+
+    private void leftScrollButtonDisable() {
+        jButton11.setEnabled(false);
+        jButton11.setBackground(new java.awt.Color(230,230,230));
+        jButton11.setIcon(null);
+    }
+
+    private void rightScrollButtonDisable() {
+        jButton12.setEnabled(false);
+        jButton12.setBackground(new java.awt.Color(230,230,230));
+        jButton12.setIcon(null);
+    }
+
+    private void rightScrollButtonEnableUnfocused() {
+        jButton12.setEnabled(true);
+        jButton12.setBackground(new java.awt.Color(209,209,209));
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-more-than-15-orange.png")));
+    }
+
+    private void rightScrollButtonEnableFocused() {
+        jButton12.setEnabled(true);
+        jButton12.setBackground(new java.awt.Color(209,209,209));
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-more-than-15-black.png")));
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -977,6 +1115,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton addMemoryButton;
     private javax.swing.JButton clearMemoryButton;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
@@ -1003,6 +1143,9 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextPane jTextPane2;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JButton memoryButton;
     private javax.swing.JLabel modelLabel;
