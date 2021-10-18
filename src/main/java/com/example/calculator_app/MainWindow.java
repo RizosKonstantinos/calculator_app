@@ -35,6 +35,12 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         outputPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        clearMemoryButton = new javax.swing.JButton();
+        recallMemoryButton = new javax.swing.JButton();
+        addMemoryButton = new javax.swing.JButton();
+        subtrackMemoryButton = new javax.swing.JButton();
+        storeMemoryButton = new javax.swing.JButton();
+        memoryButton = new javax.swing.JButton();
         mainPanel = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -121,19 +127,131 @@ public class MainWindow extends javax.swing.JFrame {
             .addGap(0, 88, Short.MAX_VALUE)
         );
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 0));
+        jPanel2.setBackground(new java.awt.Color(230, 230, 230));
         jPanel2.setPreferredSize(new java.awt.Dimension(0, 28));
+        jPanel2.setLayout(new java.awt.GridLayout(1, 6, 2, 0));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
+        clearMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        clearMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        clearMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        clearMemoryButton.setText("MC");
+        clearMemoryButton.setToolTipText("");
+        clearMemoryButton.setBorder(null);
+        clearMemoryButton.setEnabled(false);
+        clearMemoryButton.setFocusPainted(false);
+        clearMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                clearMemoryButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                clearMemoryButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                clearMemoryButtonMouseExited(evt);
+            }
+        });
+        jPanel2.add(clearMemoryButton);
+
+        recallMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        recallMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        recallMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        recallMemoryButton.setText("MR");
+        recallMemoryButton.setToolTipText("");
+        recallMemoryButton.setBorder(null);
+        recallMemoryButton.setEnabled(false);
+        recallMemoryButton.setFocusPainted(false);
+        recallMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                recallMemoryButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                recallMemoryButtonMouseExited(evt);
+            }
+        });
+        jPanel2.add(recallMemoryButton);
+
+        addMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        addMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        addMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        addMemoryButton.setText("M+");
+        addMemoryButton.setToolTipText("Memory add");
+        addMemoryButton.setBorder(null);
+        addMemoryButton.setFocusPainted(false);
+        addMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addMemoryButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                addMemoryButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                addMemoryButtonMouseExited(evt);
+            }
+        });
+        jPanel2.add(addMemoryButton);
+
+        subtrackMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        subtrackMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        subtrackMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        subtrackMemoryButton.setText("M-");
+        subtrackMemoryButton.setToolTipText("Memory subtrack");
+        subtrackMemoryButton.setBorder(null);
+        subtrackMemoryButton.setFocusPainted(false);
+        subtrackMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                subtrackMemoryButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                subtrackMemoryButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                subtrackMemoryButtonMouseExited(evt);
+            }
+        });
+        jPanel2.add(subtrackMemoryButton);
+
+        storeMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        storeMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        storeMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        storeMemoryButton.setText("MS");
+        storeMemoryButton.setToolTipText("Memory store");
+        storeMemoryButton.setBorder(null);
+        storeMemoryButton.setFocusPainted(false);
+        storeMemoryButton.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        storeMemoryButton.setIconTextGap(0);
+        storeMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                storeMemoryButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                storeMemoryButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                storeMemoryButtonMouseExited(evt);
+            }
+        });
+        jPanel2.add(storeMemoryButton);
+
+        memoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        memoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        memoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        memoryButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/black-triangle-down-10x10.png"))); // NOI18N
+        memoryButton.setText("M");
+        memoryButton.setToolTipText("");
+        memoryButton.setBorder(null);
+        memoryButton.setEnabled(false);
+        memoryButton.setFocusPainted(false);
+        memoryButton.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        memoryButton.setIconTextGap(0);
+        memoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                memoryButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                memoryButtonMouseExited(evt);
+            }
+        });
+        jPanel2.add(memoryButton);
 
         mainPanel.setBackground(new java.awt.Color(230, 230, 230));
         mainPanel.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -735,6 +853,89 @@ public class MainWindow extends javax.swing.JFrame {
         jButton21.setBackground(new java.awt.Color(236,177,142));
     }//GEN-LAST:event_jButton21MouseExited
 
+    private void clearMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearMemoryButtonMouseEntered
+        if(clearMemoryButton.isEnabled()){
+            clearMemoryButton.setBackground(new java.awt.Color(209,209,209));
+            clearMemoryButton.setToolTipText("Clear all memory");
+        }
+    }//GEN-LAST:event_clearMemoryButtonMouseEntered
+
+    private void clearMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearMemoryButtonMouseExited
+        clearMemoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_clearMemoryButtonMouseExited
+
+    private void recallMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recallMemoryButtonMouseEntered
+        if(recallMemoryButton.isEnabled()){
+            recallMemoryButton.setBackground(new java.awt.Color(209,209,209));
+            recallMemoryButton.setToolTipText("Memory recall");
+        }
+    }//GEN-LAST:event_recallMemoryButtonMouseEntered
+
+    private void recallMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recallMemoryButtonMouseExited
+        recallMemoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_recallMemoryButtonMouseExited
+
+    private void addMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addMemoryButtonMouseEntered
+        addMemoryButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_addMemoryButtonMouseEntered
+
+    private void addMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addMemoryButtonMouseExited
+       addMemoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_addMemoryButtonMouseExited
+
+    private void subtrackMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtrackMemoryButtonMouseEntered
+        subtrackMemoryButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_subtrackMemoryButtonMouseEntered
+
+    private void subtrackMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtrackMemoryButtonMouseExited
+        subtrackMemoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_subtrackMemoryButtonMouseExited
+
+    private void storeMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_storeMemoryButtonMouseEntered
+        storeMemoryButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_storeMemoryButtonMouseEntered
+
+    private void storeMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_storeMemoryButtonMouseExited
+       storeMemoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_storeMemoryButtonMouseExited
+
+    private void memoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_memoryButtonMouseEntered
+       if(memoryButton.isEnabled()){
+           memoryButton.setBackground(new java.awt.Color(209,209,209));
+           memoryButton.setToolTipText("Memory");
+       }
+    }//GEN-LAST:event_memoryButtonMouseEntered
+
+    private void memoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_memoryButtonMouseExited
+        memoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_memoryButtonMouseExited
+
+    private void addMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addMemoryButtonMouseClicked
+        clearMemoryButton.setEnabled(true);
+        recallMemoryButton.setEnabled(true);
+        memoryButton.setEnabled(true);
+    }//GEN-LAST:event_addMemoryButtonMouseClicked
+
+    private void subtrackMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtrackMemoryButtonMouseClicked
+        clearMemoryButton.setEnabled(true);
+        recallMemoryButton.setEnabled(true);
+        memoryButton.setEnabled(true);
+    }//GEN-LAST:event_subtrackMemoryButtonMouseClicked
+
+    private void storeMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_storeMemoryButtonMouseClicked
+        clearMemoryButton.setEnabled(true);
+        recallMemoryButton.setEnabled(true);
+        memoryButton.setEnabled(true);
+    }//GEN-LAST:event_storeMemoryButtonMouseClicked
+
+    private void clearMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearMemoryButtonMouseClicked
+        if(clearMemoryButton.isEnabled()){
+            clearMemoryButton.setEnabled(false);
+            recallMemoryButton.setEnabled(false);
+            memoryButton.setEnabled(false);
+        }
+    }//GEN-LAST:event_clearMemoryButtonMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -773,6 +974,8 @@ public class MainWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel TopPanel;
+    private javax.swing.JButton addMemoryButton;
+    private javax.swing.JButton clearMemoryButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton17;
@@ -801,7 +1004,11 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel mainPanel;
+    private javax.swing.JButton memoryButton;
     private javax.swing.JLabel modelLabel;
     private javax.swing.JPanel outputPanel;
+    private javax.swing.JButton recallMemoryButton;
+    private javax.swing.JButton storeMemoryButton;
+    private javax.swing.JButton subtrackMemoryButton;
     // End of variables declaration//GEN-END:variables
 }
