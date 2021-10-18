@@ -21,6 +21,7 @@ public class MainWindow extends javax.swing.JFrame {
         this.setTitle("Calculator");
         this.setLocationRelativeTo(null);
         jTextPane2.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);   
+        jTextPane1.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); 
     }
 
     /**
@@ -43,6 +44,7 @@ public class MainWindow extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
+        jTextPane1 = new javax.swing.JTextPane();
         jPanel2 = new javax.swing.JPanel();
         clearMemoryButton = new javax.swing.JButton();
         recallMemoryButton = new javax.swing.JButton();
@@ -79,7 +81,7 @@ public class MainWindow extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
         setMinimumSize(new java.awt.Dimension(335, 510));
-        setPreferredSize(new java.awt.Dimension(335, 509));
+        setPreferredSize(new java.awt.Dimension(335, 510));
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setPreferredSize(new java.awt.Dimension(0, 0));
@@ -183,18 +185,29 @@ public class MainWindow extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         jPanel3.add(jScrollPane2, gridBagConstraints);
 
+        jTextPane1.setBorder(null);
+        jTextPane1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 45)); // NOI18N
+        jTextPane1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextPane1.setText("0");
+        jTextPane1.setMargin(new java.awt.Insets(0, 10, 5, 10));
+
         javax.swing.GroupLayout outputPanelLayout = new javax.swing.GroupLayout(outputPanel);
         outputPanel.setLayout(outputPanelLayout);
         outputPanelLayout.setHorizontalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, outputPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextPane1)
+                .addContainerGap())
         );
         outputPanelLayout.setVerticalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(outputPanelLayout.createSequentialGroup()
                 .addGap(3, 3, 3)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jTextPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel2.setBackground(new java.awt.Color(230, 230, 230));
@@ -710,10 +723,10 @@ public class MainWindow extends javax.swing.JFrame {
                 .addComponent(TopPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(outputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
+                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 339, Short.MAX_VALUE)
                 .addGap(4, 4, 4))
         );
 
@@ -725,7 +738,7 @@ public class MainWindow extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
         );
 
         pack();
@@ -1145,6 +1158,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JButton memoryButton;
