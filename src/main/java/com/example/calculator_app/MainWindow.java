@@ -20,8 +20,8 @@ public class MainWindow extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Calculator");
         this.setLocationRelativeTo(null);
-        jTextPane2.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);   
-        jTextPane1.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); 
+        smallResultTextPane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);   
+        resultTextPane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); 
     }
 
     /**
@@ -34,185 +34,185 @@ public class MainWindow extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jPanel1 = new javax.swing.JPanel();
-        TopPanel = new javax.swing.JPanel();
-        modelLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        mainFrame = new javax.swing.JPanel();
+        topPanel = new javax.swing.JPanel();
+        modeLabel = new javax.swing.JLabel();
+        modeTitleLabel = new javax.swing.JLabel();
         outputPanel = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        jPanel2 = new javax.swing.JPanel();
+        smallOutputPanel = new javax.swing.JPanel();
+        leftScrollButton = new javax.swing.JButton();
+        rightScrollButton = new javax.swing.JButton();
+        jScrollPane = new javax.swing.JScrollPane();
+        smallResultTextPane = new javax.swing.JTextPane();
+        resultTextPane = new javax.swing.JTextPane();
+        memoryButtonPanel = new javax.swing.JPanel();
         clearMemoryButton = new javax.swing.JButton();
         recallMemoryButton = new javax.swing.JButton();
         addMemoryButton = new javax.swing.JButton();
-        subtrackMemoryButton = new javax.swing.JButton();
+        subtractMemoryButton = new javax.swing.JButton();
         storeMemoryButton = new javax.swing.JButton();
         memoryButton = new javax.swing.JButton();
-        mainPanel = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton34 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton33 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
+        mainButtonPanel = new javax.swing.JPanel();
+        percentageButton = new javax.swing.JButton();
+        clearEntryButton = new javax.swing.JButton();
+        clearButton = new javax.swing.JButton();
+        backspaceButton = new javax.swing.JButton();
+        fractionButton = new javax.swing.JButton();
+        squaredButton = new javax.swing.JButton();
+        squareRootButton = new javax.swing.JButton();
+        divisionButton = new javax.swing.JButton();
+        number7Button = new javax.swing.JButton();
+        number8Button = new javax.swing.JButton();
+        number9Button = new javax.swing.JButton();
+        multiplicationButton = new javax.swing.JButton();
+        number4Button = new javax.swing.JButton();
+        number5Button = new javax.swing.JButton();
+        number6Button = new javax.swing.JButton();
+        subtractionButton = new javax.swing.JButton();
+        number1Button = new javax.swing.JButton();
+        number2Button = new javax.swing.JButton();
+        number3Button = new javax.swing.JButton();
+        additionButton = new javax.swing.JButton();
+        positiveNegativeButton = new javax.swing.JButton();
+        number0Button = new javax.swing.JButton();
+        decimalButton = new javax.swing.JButton();
+        equalButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
         setMinimumSize(new java.awt.Dimension(335, 510));
         setPreferredSize(new java.awt.Dimension(335, 510));
 
-        jPanel1.setBackground(new java.awt.Color(230, 230, 230));
-        jPanel1.setPreferredSize(new java.awt.Dimension(0, 0));
+        mainFrame.setBackground(new java.awt.Color(230, 230, 230));
+        mainFrame.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        TopPanel.setBackground(new java.awt.Color(102, 102, 255));
-        TopPanel.setMinimumSize(new java.awt.Dimension(0, 0));
-        TopPanel.setPreferredSize(new java.awt.Dimension(0, 36));
+        topPanel.setBackground(new java.awt.Color(102, 102, 255));
+        topPanel.setMinimumSize(new java.awt.Dimension(0, 0));
+        topPanel.setPreferredSize(new java.awt.Dimension(0, 36));
 
         String mode = new String("\u2630").toUpperCase();
-        modelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        modelLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
-        modelLabel.setToolTipText("Open Navigation");
-        modelLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        modelLabel.setBounds(2, 6, 61, 37);
+        modeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        modeLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
+        modeLabel.setToolTipText("Open Navigation");
+        modeLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        modeLabel.setBounds(2, 6, 61, 37);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Standard");
-        jLabel1.setMaximumSize(new java.awt.Dimension(75, 24));
-        jLabel1.setMinimumSize(new java.awt.Dimension(75, 24));
-        jLabel1.setPreferredSize(new java.awt.Dimension(75, 24));
+        modeTitleLabel.setFont(new java.awt.Font("Segoe UI Semibold", 1, 20)); // NOI18N
+        modeTitleLabel.setForeground(new java.awt.Color(0, 0, 0));
+        modeTitleLabel.setText("Standard");
+        modeTitleLabel.setMaximumSize(new java.awt.Dimension(75, 24));
+        modeTitleLabel.setMinimumSize(new java.awt.Dimension(75, 24));
+        modeTitleLabel.setPreferredSize(new java.awt.Dimension(75, 24));
 
-        javax.swing.GroupLayout TopPanelLayout = new javax.swing.GroupLayout(TopPanel);
-        TopPanel.setLayout(TopPanelLayout);
-        TopPanelLayout.setHorizontalGroup(
-            TopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout topPanelLayout = new javax.swing.GroupLayout(topPanel);
+        topPanel.setLayout(topPanelLayout);
+        topPanelLayout.setHorizontalGroup(
+            topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(topPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(modelLabel)
+                .addComponent(modeLabel)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(modeTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        TopPanelLayout.setVerticalGroup(
-            TopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TopPanelLayout.createSequentialGroup()
+        topPanelLayout.setVerticalGroup(
+            topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(topPanelLayout.createSequentialGroup()
                 .addGap(9, 9, 9)
-                .addGroup(TopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(modelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(modeTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(modeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
         outputPanel.setBackground(new java.awt.Color(255, 102, 102));
 
-        jPanel3.setLayout(new java.awt.GridBagLayout());
+        smallOutputPanel.setLayout(new java.awt.GridBagLayout());
 
-        jButton11.setBackground(new java.awt.Color(230, 230, 230));
-        jButton11.setBorder(null);
-        jButton11.setFocusPainted(false);
-        jButton11.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton11.setMaximumSize(new java.awt.Dimension(18, 17));
-        jButton11.setMinimumSize(new java.awt.Dimension(18, 17));
-        jButton11.setPreferredSize(new java.awt.Dimension(18, 17));
-        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+        leftScrollButton.setBackground(new java.awt.Color(230, 230, 230));
+        leftScrollButton.setBorder(null);
+        leftScrollButton.setFocusPainted(false);
+        leftScrollButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        leftScrollButton.setMaximumSize(new java.awt.Dimension(18, 17));
+        leftScrollButton.setMinimumSize(new java.awt.Dimension(18, 17));
+        leftScrollButton.setPreferredSize(new java.awt.Dimension(18, 17));
+        leftScrollButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton11MouseEntered(evt);
+                leftScrollButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton11MouseExited(evt);
+                leftScrollButtonMouseExited(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        jPanel3.add(jButton11, gridBagConstraints);
+        smallOutputPanel.add(leftScrollButton, gridBagConstraints);
 
-        jButton12.setBackground(new java.awt.Color(230, 230, 230));
-        jButton12.setBorder(null);
-        jButton12.setFocusPainted(false);
-        jButton12.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton12.setMaximumSize(new java.awt.Dimension(18, 17));
-        jButton12.setMinimumSize(new java.awt.Dimension(18, 17));
-        jButton12.setPreferredSize(new java.awt.Dimension(18, 17));
-        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+        rightScrollButton.setBackground(new java.awt.Color(230, 230, 230));
+        rightScrollButton.setBorder(null);
+        rightScrollButton.setFocusPainted(false);
+        rightScrollButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        rightScrollButton.setMaximumSize(new java.awt.Dimension(18, 17));
+        rightScrollButton.setMinimumSize(new java.awt.Dimension(18, 17));
+        rightScrollButton.setPreferredSize(new java.awt.Dimension(18, 17));
+        rightScrollButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton12MouseEntered(evt);
+                rightScrollButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton12MouseExited(evt);
+                rightScrollButtonMouseExited(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
-        jPanel3.add(jButton12, gridBagConstraints);
+        smallOutputPanel.add(rightScrollButton, gridBagConstraints);
 
-        jScrollPane2.setBorder(null);
-        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane.setBorder(null);
+        jScrollPane.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextPane2.setBackground(new java.awt.Color(230, 230, 230));
-        jTextPane2.setBorder(null);
-        jTextPane2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextPane2.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jScrollPane2.setViewportView(jTextPane2);
+        smallResultTextPane.setBackground(new java.awt.Color(230, 230, 230));
+        smallResultTextPane.setBorder(null);
+        smallResultTextPane.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        smallResultTextPane.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        jScrollPane.setViewportView(smallResultTextPane);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 1.0;
-        jPanel3.add(jScrollPane2, gridBagConstraints);
+        smallOutputPanel.add(jScrollPane, gridBagConstraints);
 
-        jTextPane1.setBorder(null);
-        jTextPane1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 45)); // NOI18N
-        jTextPane1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextPane1.setText("0");
-        jTextPane1.setMargin(new java.awt.Insets(0, 10, 5, 10));
+        resultTextPane.setBorder(null);
+        resultTextPane.setFont(new java.awt.Font("Segoe UI Semibold", 1, 45)); // NOI18N
+        resultTextPane.setForeground(new java.awt.Color(0, 0, 0));
+        resultTextPane.setText("0");
+        resultTextPane.setMargin(new java.awt.Insets(0, 10, 5, 10));
 
         javax.swing.GroupLayout outputPanelLayout = new javax.swing.GroupLayout(outputPanel);
         outputPanel.setLayout(outputPanelLayout);
         outputPanelLayout.setHorizontalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+            .addComponent(smallOutputPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, outputPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextPane1)
+                .addComponent(resultTextPane)
                 .addContainerGap())
         );
         outputPanelLayout.setVerticalGroup(
             outputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(outputPanelLayout.createSequentialGroup()
                 .addGap(3, 3, 3)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(smallOutputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(resultTextPane, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(230, 230, 230));
-        jPanel2.setPreferredSize(new java.awt.Dimension(0, 28));
-        jPanel2.setLayout(new java.awt.GridLayout(1, 6, 2, 0));
+        memoryButtonPanel.setBackground(new java.awt.Color(230, 230, 230));
+        memoryButtonPanel.setPreferredSize(new java.awt.Dimension(0, 28));
+        memoryButtonPanel.setLayout(new java.awt.GridLayout(1, 6, 2, 0));
 
         clearMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
         clearMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -233,7 +233,7 @@ public class MainWindow extends javax.swing.JFrame {
                 clearMemoryButtonMouseExited(evt);
             }
         });
-        jPanel2.add(clearMemoryButton);
+        memoryButtonPanel.add(clearMemoryButton);
 
         recallMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
         recallMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -251,7 +251,7 @@ public class MainWindow extends javax.swing.JFrame {
                 recallMemoryButtonMouseExited(evt);
             }
         });
-        jPanel2.add(recallMemoryButton);
+        memoryButtonPanel.add(recallMemoryButton);
 
         addMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
         addMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -271,27 +271,27 @@ public class MainWindow extends javax.swing.JFrame {
                 addMemoryButtonMouseExited(evt);
             }
         });
-        jPanel2.add(addMemoryButton);
+        memoryButtonPanel.add(addMemoryButton);
 
-        subtrackMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
-        subtrackMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        subtrackMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
-        subtrackMemoryButton.setText("M-");
-        subtrackMemoryButton.setToolTipText("Memory subtrack");
-        subtrackMemoryButton.setBorder(null);
-        subtrackMemoryButton.setFocusPainted(false);
-        subtrackMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        subtractMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
+        subtractMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        subtractMemoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        subtractMemoryButton.setText("M-");
+        subtractMemoryButton.setToolTipText("Memory subtrack");
+        subtractMemoryButton.setBorder(null);
+        subtractMemoryButton.setFocusPainted(false);
+        subtractMemoryButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                subtrackMemoryButtonMouseClicked(evt);
+                subtractMemoryButtonMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                subtrackMemoryButtonMouseEntered(evt);
+                subtractMemoryButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                subtrackMemoryButtonMouseExited(evt);
+                subtractMemoryButtonMouseExited(evt);
             }
         });
-        jPanel2.add(subtrackMemoryButton);
+        memoryButtonPanel.add(subtractMemoryButton);
 
         storeMemoryButton.setBackground(new java.awt.Color(230, 230, 230));
         storeMemoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -313,7 +313,7 @@ public class MainWindow extends javax.swing.JFrame {
                 storeMemoryButtonMouseExited(evt);
             }
         });
-        jPanel2.add(storeMemoryButton);
+        memoryButtonPanel.add(storeMemoryButton);
 
         memoryButton.setBackground(new java.awt.Color(230, 230, 230));
         memoryButton.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
@@ -334,399 +334,399 @@ public class MainWindow extends javax.swing.JFrame {
                 memoryButtonMouseExited(evt);
             }
         });
-        jPanel2.add(memoryButton);
+        memoryButtonPanel.add(memoryButton);
 
-        mainPanel.setBackground(new java.awt.Color(230, 230, 230));
-        mainPanel.setMinimumSize(new java.awt.Dimension(0, 0));
-        mainPanel.setLayout(new java.awt.GridLayout(6, 4, 2, 2));
+        mainButtonPanel.setBackground(new java.awt.Color(230, 230, 230));
+        mainButtonPanel.setMinimumSize(new java.awt.Dimension(0, 0));
+        mainButtonPanel.setLayout(new java.awt.GridLayout(6, 4, 2, 2));
 
-        jButton1.setBackground(new java.awt.Color(240, 240, 240));
-        jButton1.setFont(new java.awt.Font("Segoe UI Semilight", 0, 16)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-percentage-20.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        percentageButton.setBackground(new java.awt.Color(240, 240, 240));
+        percentageButton.setFont(new java.awt.Font("Segoe UI Semilight", 0, 16)); // NOI18N
+        percentageButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-percentage-20.png"))); // NOI18N
+        percentageButton.setBorder(null);
+        percentageButton.setBorderPainted(false);
+        percentageButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton1MouseEntered(evt);
+                percentageButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton1MouseExited(evt);
+                percentageButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton1);
+        mainButtonPanel.add(percentageButton);
 
-        jButton3.setBackground(new java.awt.Color(240, 240, 240));
-        jButton3.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(65, 65, 64));
-        jButton3.setText("CE");
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        clearEntryButton.setBackground(new java.awt.Color(240, 240, 240));
+        clearEntryButton.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        clearEntryButton.setForeground(new java.awt.Color(65, 65, 64));
+        clearEntryButton.setText("CE");
+        clearEntryButton.setBorder(null);
+        clearEntryButton.setBorderPainted(false);
+        clearEntryButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton3MouseEntered(evt);
+                clearEntryButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton3MouseExited(evt);
+                clearEntryButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton3);
+        mainButtonPanel.add(clearEntryButton);
 
-        jButton4.setBackground(new java.awt.Color(240, 240, 240));
-        jButton4.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(65, 65, 64));
-        jButton4.setText("C");
-        jButton4.setBorder(null);
-        jButton4.setBorderPainted(false);
-        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+        clearButton.setBackground(new java.awt.Color(240, 240, 240));
+        clearButton.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        clearButton.setForeground(new java.awt.Color(65, 65, 64));
+        clearButton.setText("C");
+        clearButton.setBorder(null);
+        clearButton.setBorderPainted(false);
+        clearButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton4MouseEntered(evt);
+                clearButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton4MouseExited(evt);
+                clearButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton4);
+        mainButtonPanel.add(clearButton);
 
-        jButton5.setBackground(new java.awt.Color(240, 240, 240));
-        jButton5.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-backspace-20.png"))); // NOI18N
-        jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+        backspaceButton.setBackground(new java.awt.Color(240, 240, 240));
+        backspaceButton.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        backspaceButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-backspace-20.png"))); // NOI18N
+        backspaceButton.setBorder(null);
+        backspaceButton.setBorderPainted(false);
+        backspaceButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton5MouseEntered(evt);
+                backspaceButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton5MouseExited(evt);
+                backspaceButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton5);
+        mainButtonPanel.add(backspaceButton);
 
-        jButton6.setBackground(new java.awt.Color(240, 240, 240));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/oie_58tr4EM4IOKH.png"))); // NOI18N
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+        fractionButton.setBackground(new java.awt.Color(240, 240, 240));
+        fractionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/oie_58tr4EM4IOKH.png"))); // NOI18N
+        fractionButton.setBorder(null);
+        fractionButton.setBorderPainted(false);
+        fractionButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton6MouseEntered(evt);
+                fractionButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton6MouseExited(evt);
+                fractionButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton6);
+        mainButtonPanel.add(fractionButton);
 
-        jButton7.setBackground(new java.awt.Color(240, 240, 240));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x-square.png"))); // NOI18N
-        jButton7.setBorder(null);
-        jButton7.setBorderPainted(false);
-        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+        squaredButton.setBackground(new java.awt.Color(240, 240, 240));
+        squaredButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x-square.png"))); // NOI18N
+        squaredButton.setBorder(null);
+        squaredButton.setBorderPainted(false);
+        squaredButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton7MouseEntered(evt);
+                squaredButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton7MouseExited(evt);
+                squaredButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton7);
+        mainButtonPanel.add(squaredButton);
 
-        jButton8.setBackground(new java.awt.Color(240, 240, 240));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/square-root-2.png"))); // NOI18N
-        jButton8.setBorder(null);
-        jButton8.setBorderPainted(false);
-        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+        squareRootButton.setBackground(new java.awt.Color(240, 240, 240));
+        squareRootButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/square-root-2.png"))); // NOI18N
+        squareRootButton.setBorder(null);
+        squareRootButton.setBorderPainted(false);
+        squareRootButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton8MouseEntered(evt);
+                squareRootButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton8MouseExited(evt);
+                squareRootButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton8);
+        mainButtonPanel.add(squareRootButton);
 
-        jButton17.setBackground(new java.awt.Color(240, 240, 240));
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-divide-20-less.png"))); // NOI18N
-        jButton17.setBorder(null);
-        jButton17.setBorderPainted(false);
-        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
+        divisionButton.setBackground(new java.awt.Color(240, 240, 240));
+        divisionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-divide-20-less.png"))); // NOI18N
+        divisionButton.setBorder(null);
+        divisionButton.setBorderPainted(false);
+        divisionButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton17MouseEntered(evt);
+                divisionButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton17MouseExited(evt);
+                divisionButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton17);
+        mainButtonPanel.add(divisionButton);
 
-        jButton18.setBackground(new java.awt.Color(249, 249, 249));
-        jButton18.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(0, 0, 0));
-        jButton18.setText("7");
-        jButton18.setBorder(null);
-        jButton18.setBorderPainted(false);
-        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+        number7Button.setBackground(new java.awt.Color(249, 249, 249));
+        number7Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number7Button.setForeground(new java.awt.Color(0, 0, 0));
+        number7Button.setText("7");
+        number7Button.setBorder(null);
+        number7Button.setBorderPainted(false);
+        number7Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton18MouseEntered(evt);
+                number7ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton18MouseExited(evt);
+                number7ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton18);
+        mainButtonPanel.add(number7Button);
 
-        jButton34.setBackground(new java.awt.Color(249, 249, 249));
-        jButton34.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton34.setForeground(new java.awt.Color(0, 0, 0));
-        jButton34.setText("8");
-        jButton34.setBorder(null);
-        jButton34.setBorderPainted(false);
-        jButton34.addMouseListener(new java.awt.event.MouseAdapter() {
+        number8Button.setBackground(new java.awt.Color(249, 249, 249));
+        number8Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number8Button.setForeground(new java.awt.Color(0, 0, 0));
+        number8Button.setText("8");
+        number8Button.setBorder(null);
+        number8Button.setBorderPainted(false);
+        number8Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton34MouseEntered(evt);
+                number8ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton34MouseExited(evt);
+                number8ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton34);
+        mainButtonPanel.add(number8Button);
 
-        jButton32.setBackground(new java.awt.Color(249, 249, 249));
-        jButton32.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton32.setForeground(new java.awt.Color(0, 0, 0));
-        jButton32.setText("9");
-        jButton32.setBorder(null);
-        jButton32.setBorderPainted(false);
-        jButton32.addMouseListener(new java.awt.event.MouseAdapter() {
+        number9Button.setBackground(new java.awt.Color(249, 249, 249));
+        number9Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number9Button.setForeground(new java.awt.Color(0, 0, 0));
+        number9Button.setText("9");
+        number9Button.setBorder(null);
+        number9Button.setBorderPainted(false);
+        number9Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton32MouseEntered(evt);
+                number9ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton32MouseExited(evt);
+                number9ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton32);
+        mainButtonPanel.add(number9Button);
 
-        jButton13.setBackground(new java.awt.Color(240, 240, 240));
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-multiply-20b.png"))); // NOI18N
-        jButton13.setBorder(null);
-        jButton13.setBorderPainted(false);
-        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+        multiplicationButton.setBackground(new java.awt.Color(240, 240, 240));
+        multiplicationButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-multiply-20b.png"))); // NOI18N
+        multiplicationButton.setBorder(null);
+        multiplicationButton.setBorderPainted(false);
+        multiplicationButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton13MouseEntered(evt);
+                multiplicationButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton13MouseExited(evt);
+                multiplicationButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton13);
+        mainButtonPanel.add(multiplicationButton);
 
-        jButton26.setBackground(new java.awt.Color(249, 249, 249));
-        jButton26.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton26.setForeground(new java.awt.Color(0, 0, 0));
-        jButton26.setText("4");
-        jButton26.setBorder(null);
-        jButton26.setBorderPainted(false);
-        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
+        number4Button.setBackground(new java.awt.Color(249, 249, 249));
+        number4Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number4Button.setForeground(new java.awt.Color(0, 0, 0));
+        number4Button.setText("4");
+        number4Button.setBorder(null);
+        number4Button.setBorderPainted(false);
+        number4Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton26MouseEntered(evt);
+                number4ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton26MouseExited(evt);
+                number4ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton26);
+        mainButtonPanel.add(number4Button);
 
-        jButton27.setBackground(new java.awt.Color(249, 249, 249));
-        jButton27.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton27.setForeground(new java.awt.Color(0, 0, 0));
-        jButton27.setText("5");
-        jButton27.setBorder(null);
-        jButton27.setBorderPainted(false);
-        jButton27.addMouseListener(new java.awt.event.MouseAdapter() {
+        number5Button.setBackground(new java.awt.Color(249, 249, 249));
+        number5Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number5Button.setForeground(new java.awt.Color(0, 0, 0));
+        number5Button.setText("5");
+        number5Button.setBorder(null);
+        number5Button.setBorderPainted(false);
+        number5Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton27MouseEntered(evt);
+                number5ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton27MouseExited(evt);
+                number5ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton27);
+        mainButtonPanel.add(number5Button);
 
-        jButton28.setBackground(new java.awt.Color(249, 249, 249));
-        jButton28.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton28.setForeground(new java.awt.Color(0, 0, 0));
-        jButton28.setText("6");
-        jButton28.setBorder(null);
-        jButton28.setBorderPainted(false);
-        jButton28.addMouseListener(new java.awt.event.MouseAdapter() {
+        number6Button.setBackground(new java.awt.Color(249, 249, 249));
+        number6Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number6Button.setForeground(new java.awt.Color(0, 0, 0));
+        number6Button.setText("6");
+        number6Button.setBorder(null);
+        number6Button.setBorderPainted(false);
+        number6Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton28MouseEntered(evt);
+                number6ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton28MouseExited(evt);
+                number6ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton28);
+        mainButtonPanel.add(number6Button);
 
-        jButton9.setBackground(new java.awt.Color(240, 240, 240));
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-subtract-20-black.png"))); // NOI18N
-        jButton9.setBorder(null);
-        jButton9.setBorderPainted(false);
-        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+        subtractionButton.setBackground(new java.awt.Color(240, 240, 240));
+        subtractionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-subtract-20-black.png"))); // NOI18N
+        subtractionButton.setBorder(null);
+        subtractionButton.setBorderPainted(false);
+        subtractionButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton9MouseEntered(evt);
+                subtractionButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton9MouseExited(evt);
+                subtractionButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton9);
+        mainButtonPanel.add(subtractionButton);
 
-        jButton29.setBackground(new java.awt.Color(249, 249, 249));
-        jButton29.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton29.setForeground(new java.awt.Color(0, 0, 0));
-        jButton29.setText("1");
-        jButton29.setBorder(null);
-        jButton29.setBorderPainted(false);
-        jButton29.addMouseListener(new java.awt.event.MouseAdapter() {
+        number1Button.setBackground(new java.awt.Color(249, 249, 249));
+        number1Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number1Button.setForeground(new java.awt.Color(0, 0, 0));
+        number1Button.setText("1");
+        number1Button.setBorder(null);
+        number1Button.setBorderPainted(false);
+        number1Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton29MouseEntered(evt);
+                number1ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton29MouseExited(evt);
+                number1ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton29);
+        mainButtonPanel.add(number1Button);
 
-        jButton30.setBackground(new java.awt.Color(249, 249, 249));
-        jButton30.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton30.setForeground(new java.awt.Color(0, 0, 0));
-        jButton30.setText("2");
-        jButton30.setBorder(null);
-        jButton30.setBorderPainted(false);
-        jButton30.addMouseListener(new java.awt.event.MouseAdapter() {
+        number2Button.setBackground(new java.awt.Color(249, 249, 249));
+        number2Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number2Button.setForeground(new java.awt.Color(0, 0, 0));
+        number2Button.setText("2");
+        number2Button.setBorder(null);
+        number2Button.setBorderPainted(false);
+        number2Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton30MouseEntered(evt);
+                number2ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton30MouseExited(evt);
+                number2ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton30);
+        mainButtonPanel.add(number2Button);
 
-        jButton31.setBackground(new java.awt.Color(249, 249, 249));
-        jButton31.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton31.setForeground(new java.awt.Color(0, 0, 0));
-        jButton31.setText("3");
-        jButton31.setBorder(null);
-        jButton31.setBorderPainted(false);
-        jButton31.addMouseListener(new java.awt.event.MouseAdapter() {
+        number3Button.setBackground(new java.awt.Color(249, 249, 249));
+        number3Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number3Button.setForeground(new java.awt.Color(0, 0, 0));
+        number3Button.setText("3");
+        number3Button.setBorder(null);
+        number3Button.setBorderPainted(false);
+        number3Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton31MouseEntered(evt);
+                number3ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton31MouseExited(evt);
+                number3ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton31);
+        mainButtonPanel.add(number3Button);
 
-        jButton25.setBackground(new java.awt.Color(240, 240, 240));
-        jButton25.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
-        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-plus-math-20.png"))); // NOI18N
-        jButton25.setBorder(null);
-        jButton25.setBorderPainted(false);
-        jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
+        additionButton.setBackground(new java.awt.Color(240, 240, 240));
+        additionButton.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
+        additionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-plus-math-20.png"))); // NOI18N
+        additionButton.setBorder(null);
+        additionButton.setBorderPainted(false);
+        additionButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton25MouseEntered(evt);
+                additionButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton25MouseExited(evt);
+                additionButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton25);
+        mainButtonPanel.add(additionButton);
 
-        jButton22.setBackground(new java.awt.Color(249, 249, 249));
-        jButton22.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-plus-slash-minus-20.png"))); // NOI18N
-        jButton22.setBorder(null);
-        jButton22.setBorderPainted(false);
-        jButton22.addMouseListener(new java.awt.event.MouseAdapter() {
+        positiveNegativeButton.setBackground(new java.awt.Color(249, 249, 249));
+        positiveNegativeButton.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        positiveNegativeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-plus-slash-minus-20.png"))); // NOI18N
+        positiveNegativeButton.setBorder(null);
+        positiveNegativeButton.setBorderPainted(false);
+        positiveNegativeButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton22MouseEntered(evt);
+                positiveNegativeButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton22MouseExited(evt);
+                positiveNegativeButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton22);
+        mainButtonPanel.add(positiveNegativeButton);
 
-        jButton33.setBackground(new java.awt.Color(249, 249, 249));
-        jButton33.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton33.setForeground(new java.awt.Color(0, 0, 0));
-        jButton33.setText("0");
-        jButton33.setBorder(null);
-        jButton33.setBorderPainted(false);
-        jButton33.addMouseListener(new java.awt.event.MouseAdapter() {
+        number0Button.setBackground(new java.awt.Color(249, 249, 249));
+        number0Button.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        number0Button.setForeground(new java.awt.Color(0, 0, 0));
+        number0Button.setText("0");
+        number0Button.setBorder(null);
+        number0Button.setBorderPainted(false);
+        number0Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton33MouseEntered(evt);
+                number0ButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton33MouseExited(evt);
+                number0ButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton33);
+        mainButtonPanel.add(number0Button);
 
-        jButton24.setBackground(new java.awt.Color(249, 249, 249));
-        jButton24.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton24.setText(",");
-        jButton24.setBorder(null);
-        jButton24.setBorderPainted(false);
-        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
+        decimalButton.setBackground(new java.awt.Color(249, 249, 249));
+        decimalButton.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        decimalButton.setText(",");
+        decimalButton.setBorder(null);
+        decimalButton.setBorderPainted(false);
+        decimalButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton24MouseEntered(evt);
+                decimalButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton24MouseExited(evt);
+                decimalButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton24);
+        mainButtonPanel.add(decimalButton);
 
-        jButton21.setBackground(new java.awt.Color(236, 177, 142));
-        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-equal-sign-20.png"))); // NOI18N
-        jButton21.setBorder(null);
-        jButton21.setBorderPainted(false);
-        jButton21.addMouseListener(new java.awt.event.MouseAdapter() {
+        equalButton.setBackground(new java.awt.Color(236, 177, 142));
+        equalButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-equal-sign-20.png"))); // NOI18N
+        equalButton.setBorder(null);
+        equalButton.setBorderPainted(false);
+        equalButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton21MouseEntered(evt);
+                equalButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton21MouseExited(evt);
+                equalButtonMouseExited(evt);
             }
         });
-        mainPanel.add(jButton21);
+        mainButtonPanel.add(equalButton);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TopPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+        javax.swing.GroupLayout mainFrameLayout = new javax.swing.GroupLayout(mainFrame);
+        mainFrame.setLayout(mainFrameLayout);
+        mainFrameLayout.setHorizontalGroup(
+            mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(topPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
             .addComponent(outputPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addComponent(memoryButtonPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+            .addGroup(mainFrameLayout.createSequentialGroup()
                 .addGap(4, 4, 4)
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                .addComponent(mainButtonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                 .addGap(4, 4, 4))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(TopPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+        mainFrameLayout.setVerticalGroup(
+            mainFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainFrameLayout.createSequentialGroup()
+                .addComponent(topPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(outputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(memoryButtonPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 339, Short.MAX_VALUE)
+                .addComponent(mainButtonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 339, Short.MAX_VALUE)
                 .addGap(4, 4, 4))
         );
 
@@ -734,207 +734,207 @@ public class MainWindow extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+            .addComponent(mainFrame, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
+            .addComponent(mainFrame, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-        jButton1.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton1MouseEntered
+    private void percentageButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_percentageButtonMouseEntered
+        percentageButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_percentageButtonMouseEntered
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        jButton1.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton1MouseExited
+    private void percentageButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_percentageButtonMouseExited
+        percentageButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_percentageButtonMouseExited
 
-    private void jButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseEntered
-        jButton3.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton3MouseEntered
+    private void clearEntryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearEntryButtonMouseEntered
+        clearEntryButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_clearEntryButtonMouseEntered
 
-    private void jButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseExited
-        jButton3.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton3MouseExited
+    private void clearEntryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearEntryButtonMouseExited
+        clearEntryButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_clearEntryButtonMouseExited
 
-    private void jButton4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseEntered
-        jButton4.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton4MouseEntered
+    private void clearButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearButtonMouseEntered
+        clearButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_clearButtonMouseEntered
 
-    private void jButton4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseExited
-        jButton4.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton4MouseExited
+    private void clearButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearButtonMouseExited
+        clearButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_clearButtonMouseExited
 
-    private void jButton5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseEntered
-        jButton5.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton5MouseEntered
+    private void backspaceButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspaceButtonMouseEntered
+        backspaceButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_backspaceButtonMouseEntered
 
-    private void jButton5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseExited
-        jButton5.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton5MouseExited
+    private void backspaceButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspaceButtonMouseExited
+        backspaceButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_backspaceButtonMouseExited
 
-    private void jButton6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseEntered
-        jButton6.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton6MouseEntered
+    private void fractionButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fractionButtonMouseEntered
+        fractionButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_fractionButtonMouseEntered
 
-    private void jButton6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseExited
-        jButton6.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton6MouseExited
+    private void fractionButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fractionButtonMouseExited
+        fractionButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_fractionButtonMouseExited
 
-    private void jButton7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseEntered
-        jButton7.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton7MouseEntered
+    private void squaredButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_squaredButtonMouseEntered
+        squaredButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_squaredButtonMouseEntered
 
-    private void jButton7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseExited
-        jButton7.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton7MouseExited
+    private void squaredButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_squaredButtonMouseExited
+        squaredButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_squaredButtonMouseExited
 
-    private void jButton8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseEntered
-        jButton8.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton8MouseEntered
+    private void squareRootButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_squareRootButtonMouseEntered
+        squareRootButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_squareRootButtonMouseEntered
 
-    private void jButton8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseExited
-        jButton8.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton8MouseExited
+    private void squareRootButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_squareRootButtonMouseExited
+        squareRootButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_squareRootButtonMouseExited
 
-    private void jButton17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseEntered
-        jButton17.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton17MouseEntered
+    private void divisionButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_divisionButtonMouseEntered
+        divisionButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_divisionButtonMouseEntered
 
-    private void jButton17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseExited
-       jButton17.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton17MouseExited
+    private void divisionButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_divisionButtonMouseExited
+       divisionButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_divisionButtonMouseExited
 
-    private void jButton13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseEntered
-        jButton13.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton13MouseEntered
+    private void multiplicationButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_multiplicationButtonMouseEntered
+        multiplicationButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_multiplicationButtonMouseEntered
 
-    private void jButton13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseExited
-        jButton13.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton13MouseExited
+    private void multiplicationButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_multiplicationButtonMouseExited
+        multiplicationButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_multiplicationButtonMouseExited
 
-    private void jButton9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseEntered
-        jButton9.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton9MouseEntered
+    private void subtractionButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtractionButtonMouseEntered
+        subtractionButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_subtractionButtonMouseEntered
 
-    private void jButton9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseExited
-        jButton9.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton9MouseExited
+    private void subtractionButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtractionButtonMouseExited
+        subtractionButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_subtractionButtonMouseExited
 
-    private void jButton25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseEntered
-        jButton25.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton25MouseEntered
+    private void additionButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_additionButtonMouseEntered
+        additionButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_additionButtonMouseEntered
 
-    private void jButton25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseExited
-        jButton25.setBackground(new java.awt.Color(240,240,240));
-    }//GEN-LAST:event_jButton25MouseExited
+    private void additionButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_additionButtonMouseExited
+        additionButton.setBackground(new java.awt.Color(240,240,240));
+    }//GEN-LAST:event_additionButtonMouseExited
 
-    private void jButton18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseEntered
-        jButton18.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton18MouseEntered
+    private void number7ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number7ButtonMouseEntered
+        number7Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number7ButtonMouseEntered
 
-    private void jButton18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseExited
-        jButton18.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton18MouseExited
+    private void number7ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number7ButtonMouseExited
+        number7Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number7ButtonMouseExited
 
-    private void jButton34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseEntered
-        jButton34.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton34MouseEntered
+    private void number8ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number8ButtonMouseEntered
+        number8Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number8ButtonMouseEntered
 
-    private void jButton34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseExited
-        jButton34.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton34MouseExited
+    private void number8ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number8ButtonMouseExited
+        number8Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number8ButtonMouseExited
 
-    private void jButton32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton32MouseEntered
-        jButton32.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton32MouseEntered
+    private void number9ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number9ButtonMouseEntered
+        number9Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number9ButtonMouseEntered
 
-    private void jButton32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton32MouseExited
-        jButton32.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton32MouseExited
+    private void number9ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number9ButtonMouseExited
+        number9Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number9ButtonMouseExited
 
-    private void jButton26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseEntered
-        jButton26.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton26MouseEntered
+    private void number4ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number4ButtonMouseEntered
+        number4Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number4ButtonMouseEntered
 
-    private void jButton26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseExited
-        jButton26.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton26MouseExited
+    private void number4ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number4ButtonMouseExited
+        number4Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number4ButtonMouseExited
 
-    private void jButton27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseEntered
-        jButton27.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton27MouseEntered
+    private void number5ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number5ButtonMouseEntered
+        number5Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number5ButtonMouseEntered
 
-    private void jButton27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseExited
-        jButton27.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton27MouseExited
+    private void number5ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number5ButtonMouseExited
+        number5Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number5ButtonMouseExited
 
-    private void jButton28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton28MouseEntered
-        jButton28.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton28MouseEntered
+    private void number6ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number6ButtonMouseEntered
+        number6Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number6ButtonMouseEntered
 
-    private void jButton28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton28MouseExited
-        jButton28.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton28MouseExited
+    private void number6ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number6ButtonMouseExited
+        number6Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number6ButtonMouseExited
 
-    private void jButton29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton29MouseEntered
-        jButton29.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton29MouseEntered
+    private void number1ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number1ButtonMouseEntered
+        number1Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number1ButtonMouseEntered
 
-    private void jButton29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton29MouseExited
-        jButton29.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton29MouseExited
+    private void number1ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number1ButtonMouseExited
+        number1Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number1ButtonMouseExited
 
-    private void jButton30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseEntered
-        jButton30.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton30MouseEntered
+    private void number2ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number2ButtonMouseEntered
+        number2Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number2ButtonMouseEntered
 
-    private void jButton30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseExited
-        jButton30.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton30MouseExited
+    private void number2ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number2ButtonMouseExited
+        number2Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number2ButtonMouseExited
 
-    private void jButton31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseEntered
-        jButton31.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton31MouseEntered
+    private void number3ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number3ButtonMouseEntered
+        number3Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number3ButtonMouseEntered
 
-    private void jButton31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseExited
-        jButton31.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton31MouseExited
+    private void number3ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number3ButtonMouseExited
+        number3Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number3ButtonMouseExited
 
-    private void jButton22MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton22MouseEntered
-        jButton22.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton22MouseEntered
+    private void positiveNegativeButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_positiveNegativeButtonMouseEntered
+        positiveNegativeButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_positiveNegativeButtonMouseEntered
 
-    private void jButton22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton22MouseExited
-        jButton22.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton22MouseExited
+    private void positiveNegativeButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_positiveNegativeButtonMouseExited
+        positiveNegativeButton.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_positiveNegativeButtonMouseExited
 
-    private void jButton33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton33MouseEntered
-        jButton33.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton33MouseEntered
+    private void number0ButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number0ButtonMouseEntered
+        number0Button.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_number0ButtonMouseEntered
 
-    private void jButton33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton33MouseExited
-        jButton33.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton33MouseExited
+    private void number0ButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_number0ButtonMouseExited
+        number0Button.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_number0ButtonMouseExited
 
-    private void jButton24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseEntered
-        jButton24.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_jButton24MouseEntered
+    private void decimalButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_decimalButtonMouseEntered
+        decimalButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_decimalButtonMouseEntered
 
-    private void jButton24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseExited
-        jButton24.setBackground(new java.awt.Color(249,249,249));
-    }//GEN-LAST:event_jButton24MouseExited
+    private void decimalButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_decimalButtonMouseExited
+        decimalButton.setBackground(new java.awt.Color(249,249,249));
+    }//GEN-LAST:event_decimalButtonMouseExited
 
-    private void jButton21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MouseEntered
-        jButton21.setBackground(new java.awt.Color(241,138,77));
-    }//GEN-LAST:event_jButton21MouseEntered
+    private void equalButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_equalButtonMouseEntered
+        equalButton.setBackground(new java.awt.Color(241,138,77));
+    }//GEN-LAST:event_equalButtonMouseEntered
 
-    private void jButton21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MouseExited
-        jButton21.setBackground(new java.awt.Color(236,177,142));
-    }//GEN-LAST:event_jButton21MouseExited
+    private void equalButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_equalButtonMouseExited
+        equalButton.setBackground(new java.awt.Color(236,177,142));
+    }//GEN-LAST:event_equalButtonMouseExited
 
     private void clearMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearMemoryButtonMouseEntered
         if(clearMemoryButton.isEnabled()){
@@ -966,13 +966,13 @@ public class MainWindow extends javax.swing.JFrame {
        addMemoryButton.setBackground(new java.awt.Color(230,230,230));
     }//GEN-LAST:event_addMemoryButtonMouseExited
 
-    private void subtrackMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtrackMemoryButtonMouseEntered
-        subtrackMemoryButton.setBackground(new java.awt.Color(209,209,209));
-    }//GEN-LAST:event_subtrackMemoryButtonMouseEntered
+    private void subtractMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtractMemoryButtonMouseEntered
+        subtractMemoryButton.setBackground(new java.awt.Color(209,209,209));
+    }//GEN-LAST:event_subtractMemoryButtonMouseEntered
 
-    private void subtrackMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtrackMemoryButtonMouseExited
-        subtrackMemoryButton.setBackground(new java.awt.Color(230,230,230));
-    }//GEN-LAST:event_subtrackMemoryButtonMouseExited
+    private void subtractMemoryButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtractMemoryButtonMouseExited
+        subtractMemoryButton.setBackground(new java.awt.Color(230,230,230));
+    }//GEN-LAST:event_subtractMemoryButtonMouseExited
 
     private void storeMemoryButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_storeMemoryButtonMouseEntered
         storeMemoryButton.setBackground(new java.awt.Color(209,209,209));
@@ -999,11 +999,11 @@ public class MainWindow extends javax.swing.JFrame {
         memoryButton.setEnabled(true);
     }//GEN-LAST:event_addMemoryButtonMouseClicked
 
-    private void subtrackMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtrackMemoryButtonMouseClicked
+    private void subtractMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subtractMemoryButtonMouseClicked
         clearMemoryButton.setEnabled(true);
         recallMemoryButton.setEnabled(true);
         memoryButton.setEnabled(true);
-    }//GEN-LAST:event_subtrackMemoryButtonMouseClicked
+    }//GEN-LAST:event_subtractMemoryButtonMouseClicked
 
     private void storeMemoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_storeMemoryButtonMouseClicked
         clearMemoryButton.setEnabled(true);
@@ -1019,72 +1019,72 @@ public class MainWindow extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_clearMemoryButtonMouseClicked
 
-    private void jButton11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseEntered
-        if (jTextPane2.getText().equals("")) {
+    private void leftScrollButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_leftScrollButtonMouseEntered
+        if (smallResultTextPane.getText().equals("")) {
             leftScrollButtonDisable();
         } else {
             leftScrollButtonEnableFocused();
         }
-    }//GEN-LAST:event_jButton11MouseEntered
+    }//GEN-LAST:event_leftScrollButtonMouseEntered
 
-    private void jButton11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseExited
-        if (jTextPane2.getText().equals("")) {
+    private void leftScrollButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_leftScrollButtonMouseExited
+        if (smallResultTextPane.getText().equals("")) {
             leftScrollButtonDisable();
         } else {
             leftScrollButtonEnableUnfocused();
         }
-    }//GEN-LAST:event_jButton11MouseExited
+    }//GEN-LAST:event_leftScrollButtonMouseExited
 
-    private void jButton12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseEntered
-        if (jTextPane2.getText().equals("")) {
+    private void rightScrollButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rightScrollButtonMouseEntered
+        if (smallResultTextPane.getText().equals("")) {
             rightScrollButtonDisable();
         } else {
             rightScrollButtonEnableFocused();
         }
-    }//GEN-LAST:event_jButton12MouseEntered
+    }//GEN-LAST:event_rightScrollButtonMouseEntered
 
-    private void jButton12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseExited
-        if (jTextPane2.getText().equals("")) {
+    private void rightScrollButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rightScrollButtonMouseExited
+        if (smallResultTextPane.getText().equals("")) {
             rightScrollButtonDisable();
         } else {
             rightScrollButtonEnableUnfocused();
         }
-    }//GEN-LAST:event_jButton12MouseExited
+    }//GEN-LAST:event_rightScrollButtonMouseExited
 
     private void leftScrollButtonEnableUnfocused() {
-        jButton11.setEnabled(true);
-        jButton11.setBackground(new java.awt.Color(209,209,209));
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-less-than-15-orange.png")));
+        leftScrollButton.setEnabled(true);
+        leftScrollButton.setBackground(new java.awt.Color(209,209,209));
+        leftScrollButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-less-than-15-orange.png")));
     }
 
     private void leftScrollButtonEnableFocused() {
-        jButton11.setEnabled(true);
-        jButton11.setBackground(new java.awt.Color(209,209,209));
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-less-than-15-black.png")));
+        leftScrollButton.setEnabled(true);
+        leftScrollButton.setBackground(new java.awt.Color(209,209,209));
+        leftScrollButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-less-than-15-black.png")));
     }
 
     private void leftScrollButtonDisable() {
-        jButton11.setEnabled(false);
-        jButton11.setBackground(new java.awt.Color(230,230,230));
-        jButton11.setIcon(null);
+        leftScrollButton.setEnabled(false);
+        leftScrollButton.setBackground(new java.awt.Color(230,230,230));
+        leftScrollButton.setIcon(null);
     }
 
     private void rightScrollButtonDisable() {
-        jButton12.setEnabled(false);
-        jButton12.setBackground(new java.awt.Color(230,230,230));
-        jButton12.setIcon(null);
+        rightScrollButton.setEnabled(false);
+        rightScrollButton.setBackground(new java.awt.Color(230,230,230));
+        rightScrollButton.setIcon(null);
     }
 
     private void rightScrollButtonEnableUnfocused() {
-        jButton12.setEnabled(true);
-        jButton12.setBackground(new java.awt.Color(209,209,209));
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-more-than-15-orange.png")));
+        rightScrollButton.setEnabled(true);
+        rightScrollButton.setBackground(new java.awt.Color(209,209,209));
+        rightScrollButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-more-than-15-orange.png")));
     }
 
     private void rightScrollButtonEnableFocused() {
-        jButton12.setEnabled(true);
-        jButton12.setBackground(new java.awt.Color(209,209,209));
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-more-than-15-black.png")));
+        rightScrollButton.setEnabled(true);
+        rightScrollButton.setBackground(new java.awt.Color(209,209,209));
+        rightScrollButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-more-than-15-black.png")));
     }
 
     /**
@@ -1124,48 +1124,48 @@ public class MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel TopPanel;
     private javax.swing.JButton addMemoryButton;
+    private javax.swing.JButton additionButton;
+    private javax.swing.JButton backspaceButton;
+    private javax.swing.JButton clearButton;
+    private javax.swing.JButton clearEntryButton;
     private javax.swing.JButton clearMemoryButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JPanel mainPanel;
+    private javax.swing.JButton decimalButton;
+    private javax.swing.JButton divisionButton;
+    private javax.swing.JButton equalButton;
+    private javax.swing.JButton fractionButton;
+    private javax.swing.JScrollPane jScrollPane;
+    private javax.swing.JButton leftScrollButton;
+    private javax.swing.JPanel mainButtonPanel;
+    private javax.swing.JPanel mainFrame;
     private javax.swing.JButton memoryButton;
-    private javax.swing.JLabel modelLabel;
+    private javax.swing.JPanel memoryButtonPanel;
+    private javax.swing.JLabel modeLabel;
+    private javax.swing.JLabel modeTitleLabel;
+    private javax.swing.JButton multiplicationButton;
+    private javax.swing.JButton number0Button;
+    private javax.swing.JButton number1Button;
+    private javax.swing.JButton number2Button;
+    private javax.swing.JButton number3Button;
+    private javax.swing.JButton number4Button;
+    private javax.swing.JButton number5Button;
+    private javax.swing.JButton number6Button;
+    private javax.swing.JButton number7Button;
+    private javax.swing.JButton number8Button;
+    private javax.swing.JButton number9Button;
     private javax.swing.JPanel outputPanel;
+    private javax.swing.JButton percentageButton;
+    private javax.swing.JButton positiveNegativeButton;
     private javax.swing.JButton recallMemoryButton;
+    private javax.swing.JTextPane resultTextPane;
+    private javax.swing.JButton rightScrollButton;
+    private javax.swing.JPanel smallOutputPanel;
+    private javax.swing.JTextPane smallResultTextPane;
+    private javax.swing.JButton squareRootButton;
+    private javax.swing.JButton squaredButton;
     private javax.swing.JButton storeMemoryButton;
-    private javax.swing.JButton subtrackMemoryButton;
+    private javax.swing.JButton subtractMemoryButton;
+    private javax.swing.JButton subtractionButton;
+    private javax.swing.JPanel topPanel;
     // End of variables declaration//GEN-END:variables
 }
